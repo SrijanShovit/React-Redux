@@ -7,18 +7,20 @@ import CakeContainer from './Components/CakeContainer';
 import IceCreamContainer from './Components/IceCreamContainer';
 import NewCakeContainer from './Components/NewCakeContainer';
 import ItemContainer from './Components/ItemContainer';
+import UserContainer from './Components/UserContainer';
 
 function App() {
   return (
     //passing prop to make Provider aware of store
     <Provider store={store}>
     <div className="App">
-      <ItemContainer cake/>
+      <UserContainer/>
+      {/* <ItemContainer cake/>
       <ItemContainer />
       <CakeContainer/>
       <HooksCakeContainer/>
       <IceCreamContainer/>
-      <NewCakeContainer/>
+      <NewCakeContainer/> */}
     </div>
     </Provider>
   );
